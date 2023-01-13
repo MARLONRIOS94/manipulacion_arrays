@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app"></div>
+
+    <script>
+        const tasks = [
+            {title: 'pasear al perro', status: 'completo'},
+            {title: 'comprar el mercado', status: 'incompleto'},
+            {title: 'ver una pelicula', status: 'completo'},
+            {title: 'preparar la comida', status: 'incompleto'},
+            {title: 'ir al parque', status: 'incompleto'},
+        ];
+
+        const app = document.getElementById('app');
+        tasks.forEach(task => {
+            app.innerHTML += `<li>${task.title} - ${task.status}</li>`;
+        })
+    </script>
+</body>
+</html>
